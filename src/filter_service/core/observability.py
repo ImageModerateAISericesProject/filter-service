@@ -1,0 +1,1 @@
+# Настройка Sentry, OpenTelemetry, Loguru

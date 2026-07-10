@@ -1,0 +1,19 @@
+[project]
+name = "filter-service"
+version = "0.1.0"
+description = "Filter service for ImageModerateAISericesProject "
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dishka>=1.10.1",
+    "fastapi>=0.139.0",
+    "pydantic>=2.13.4",
+    "pydantic-settings>=2.14.2",
+    "pytest>=9.1.1",
+    "uvicorn[standard]>=0.51.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.15.21",
+]
