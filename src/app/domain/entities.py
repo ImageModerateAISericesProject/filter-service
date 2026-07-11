@@ -12,11 +12,16 @@ class Post:
     post_id: int
     images_list: list[Image]
 
+class SourceType(str, Enum):
+    REVIEWS = "reviews"
+    GOODS = "goods"
+
 @dataclass
-class Image:
+class IncomingImage:
+    """Получаем"""
     id:int
-    link:str # линк на S3
-    source:str
+    link:str
+    source:SourceType
     status:StatusType
     post_id:int
 
